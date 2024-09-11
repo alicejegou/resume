@@ -1,0 +1,139 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: rgb(34, 34, 34);
+}
+
+h1 {
+    font-family: "Handjet", sans-serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Handjet", sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: "Handjet", sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.h4 {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+}
+
+p {
+    margin: 0 auto;
+}
+
+.separator {
+    margin: 0 auto;
+    margin-top: 0;
+    height: 10px;
+    color: rgb(34, 34, 34);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+ul li::before {
+    content: ">";
+    margin-right: 3px; 
+}
+
+header {
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+#dna-icon {
+    width: 7%;
+    height: 7%;
+}
+
+.second-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 40%; 
+    margin: 0 auto;
+    background-color: rgb(34, 34, 34);
+    color:white;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+#brief-description {
+    text-align: center;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#column-left {
+    flex-basis: 35%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    padding-right: 30px;
+}
+
+#column-right {
+    flex-basis: 65%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    padding-right: 30px;
+}
+
+.linkedin-logo {
+    max-width: 30%;
+    max-height: 60%;
+    margin-top: 5px ;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.education-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.interest-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.job {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
