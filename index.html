@@ -3,110 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice JEGOU Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Alice JEGOU_Resume_2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Calibri';
+            line-height: 1.6;
+            color: #333;
+            max-width: 50rem;
+            margin: 0 auto;
+            padding: 0.5rem;
+        }
+        header {
+            text-align: center;
+            background-color: #134F5C;
+            color: aliceblue;
+            padding: 0.2rem;
+            font-size: 0.9rem;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300; 
+            font-size: 1.2rem;
+            margin: 0rem;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            color: #134F5C;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 0.2rem;
+        }
+        h3 {
+            font-family: 'Calibri';
+            font-size: 0.7rem;
+            margin: 0rem;
+        }
+        h4 {
+            font-family: 'Calibri';
+            color: #7f8c8d;
+            font-size: 0.7rem;
+            margin: 0rem;
+        }
+
+        p {
+            margin: 0rem;
+            font-size: 0.7rem;
+            text-align: justify;
+        } 
+
+        a {
+            color: #0A9BAA; 
+            text-decoration: none; 
+        }
+
+        a:hover {
+            color: #0A9BAA; 
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #0A9BAA; 
+        }
+        .experience-item, .education-item {
+            margin-bottom: 0.3rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 1.8rem; 
+            justify-content: space-between; 
+        }
+
+        .skill-column {
+            flex: 1; 
+            min-width: 12rem; 
+            max-width: 33%; 
+            box-sizing: border-box; 
+        }
+
+        .skill-column h3 {
+            font-family: 'Calibri';
+            font-size: 0.7rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .skill-column ul {
+            margin: 0;
+            padding-left: 0.8rem;
+        }
+
+        .skill-column li {
+            font-size: 0.7rem;
+        }
+    </style>
 </head>
 
 <body>
-
     <header>
-        <h1>Alice JEGOU | PhD Student in Bioinformatics</h1>
-        <img src="images/dna-strand-focus-removebg-preview.png" alt="DNA icon" id="dna-icon">
-
-        <section class="second-header">
-            <div id="brief-description">
-                <h2 style="font-family: 'Handjet', sans-serif;">About me</h2>
-                <p align=justify style="margin-top: 5px;">During my academic cursus, I specialized in molecular genetics, primarily through bioinformatics approaches
-                    that have always fascinated me. Demonstrating curiosity and adaptability, I enjoy to learn and to adress challenges. Currently in my PhD first year, my research area focus on Transcription Factors DNA-binding properties but also protein-protein interactions, in the model plant <i>Arabidopsis thaliana</i>.</p>
-            </div>
-        </section>
+        <h1>Alice JEGOU, PhD Student in Bioinformatics</h1>
     </header>
 
-    <section class="container">
-        <div class="column" id="column-left">
-            <h2>Contact</h2>
-            <p class="separator">_________________________</p>
-            <p style="font-size: 18px;"><br>alice.jegou@gmail.com</p>
-            <a href="https://www.linkedin.com/in/alice-jegou-9a885a200/" target="_blank">
-                <img src="images/linkedin-logo.png" alt="LinkedIn Logo" class="linkedin-logo">
-            </a>
+    <section>
+        <h2>CONTACT</h2>
+        <p>alice.jegou@cea.fr - CEA Grenoble (France) - <a href="https://www.linkedin.com/in/alice-jegou-9a885a200/" target="_blank">  Linkedin </a> - <a href="https://github.com/alicejegou" target="_blank"> GitHub </a> </p>
+    </section>
 
-            <h2>Languages</h2>
-            <p class="separator">_________________________</p>
-            <ul>
-                <li><b>French:</b> Native</li>
-                <li><b>English:</b> Scientific writing and oral skills</li>
-                <li><b>Spanish and Italian:</b> Basic knowledge</li>
-            </ul>
-            <h2>Hard Skills</h2>
-            <p class="separator">_________________________</p>
-            <ul>
-                <li><b>Scripting:</b> R, Python, Bash (Unix/Linux environment)</li>
-                <li><b>Workflow system management:</b> Snakemake</li>
-                <li><b>Office:</b> Excel, PowerPoint</li>
-                <li><b>Laboratory techniques:</b> basis in molecular genetic</li>
-            </ul>
-            <h2>Soft Skills</h2>
-            <p class="separator">_________________________</p>
-            <ul>
-                <li>Strong communication skills</li>
-                <li>Used to interdisciplinary teams</li>
-                <li>Adaptability and fast learner</li>
-            </ul>
-            <h2>Experiences</h2>
-            <p class="separator">_________________________</p>
-            <div class="experience-item">
-                <h4 class="h4"> Mar 2023 - Aug 2023 | Milan, Italy</h4>
-                <p>Study semester abroad</p>
-            </div>
-            <div class="experience-item">
-                <h4 class="h4">Sept 2024 | Col du Lautaret, France</h4>
-                <p>Poster Presententation during annual PLANT-Int Symposium</p>   
-            </div>
-            
-            <h2>Interests</h2>
-            <p class="separator">_________________________</p>
-            <p class="interest-item"><b>Artistic practice: </b>use of digital and traditional media in painting, drawing, animation and design.</p>
-            <p class="interest-item"><b>Athletic pursuits:</b> mountain sports (hiking, climbing, skiing, trail) and combat sports (boxing)</p>      
+    <section>
+        <h2>EXPERIENCES</h2>
+        <div class="experience-item">
+            <h3>PhD in Bioinformatics | Oct 2024 – Present</h3>
+            <h4>CEA Grenoble (LPCV - Flo_Re team)</h4>
+            <p>Study of DNA-binding properties of transcription factors in <i>A. thaliana</i>, both individually and in combination. With a standardized ChIP/DAP-seq data pipeline analysis, hundreds of trasncription factors (TF) binding experiment were analysed. The TF binding sites spatial arrangement is a key parameter in my studies, looking for preferencial grammar patterns. Crossing with multi-omics data, I aim to predict potential TFs complexes.</p>
         </div>
-
-        <div class="column" id="column-right">
-             <h2>Education</h2>
-             <p class="separator">_________________________</p>
-             <div class="education-item">
-                <h3>PhD in Bioinformatics</h3>
-                <h4 class="h4">Université Grenoble Alpes - Grenoble, France | 2024 - now</h4>
-            </div>
-            <div class="education-item">
-                <h3>Dual MSc in Plant Biology (PLANT-International)</h3>
-                <h4 class="h4">Université Grenoble Alpes - Università degli Studi di Milano | 2022 - 2024</h4>
-            </div>
-            <div class="education-item">
-                <h3>Bachelor in Biology</h3>
-                <h4 class="h4">Université Grenoble Alpes | 2020 - 2022</h4>
-            </div>
-            <h2>Professional Experience</h2>
-            <p class="separator">_________________________</p>
-            <div class="job">
-                <h3>PhD in Bioinformatics applied to plant molecular genetics</h3>
-                <h4 class="h4">CEA Grenoble (LPCV - Team FLO_RE) | 2024 - now</h4>
-                <p>Thesis: "Modelling  combinatorial nature of Transcription Factor to better understand genetic networks of gene regulation in Arabidopsis thaliana".<br>
-                In this role I aim to develop a machine learning model to predict the binding of transcription factors dimers.</p>
-            </div>
-
-            <div class="job">
-                <h3>6-months MCs thesis internship in Bioinformatics</h3>
-                <h4 class="h4">CEA Grenoble (LPCV - Team FLO_RE) | 15 Jan 2024 - 12 Jul 2024</h4>
-                <p>Thesis: "Building an Atlas of DNA-binding Properties of Transcription Factors (<i>Arabidopsis thaliana</i>)"</p>
-                <p>In the context of analyzing ChIP and DAP sequencing data at the genome-wide scale, Atlas is a project aimed at comparing the inter- and intra-family properties of Transcription Factors in Arabidopsis thaliana, based on the PlantTFClass classification.</p>
-                <ul>
-                    <li>Scripting and use of analysis pipelines (ChIP-seq and DAP-seq)</li>
-                    <li>Graphical representations and processing of large datasets</li>
-                    <li>Workflow management</li>
-                </ul>
+        <div class="experience-item">
+            <h3>Bioinformatics Master Thesis | Jan 2024 – Jul 2024</h3>
+            <h4>CEA Grenoble (LPCV - Team FLO_RE) | Jan 2024 - Jul 2024</h4>
+            <p> Building an atlas of <i>A. thaliana</i> transcription factors DNA-binding properties (ChIP/DAP-seq data analysis)</p>
+        </div>
+        <div class="experience-item">
+            <h3>Master’s Internship: Molecular Biology & Epigenetics | Oct 2023 – Jan 2024</h3>
+            <h4>RDP, ENS de Lyon (EpiCDev team)</h4>
+            <p> Analyzing natural variation in the requirement of active DNA demethylation for male fertility (RNA extractions and Chop-PCR experiments)</p>
         </div>
     </section>
 
+    <section>
+        <h2>EDUCATION</h2>
+        <div class="education-item">
+            <h3>PhD in Bioinformatics</h3>
+            <h4>Université Grenoble Alpes (France) | 2024 - now</h4>
+        </div>
+        <div class="education-item">
+            <h3>Dual MSc in Plant Biology (PLANT-International)</h3>
+            <h4>Université Grenoble Alpes (France) - Università degli Studi di Milano (Italy) | 2022 - 2024</h4>
+        </div>
+        <div class="education-item">
+            <h3>Bachelor in Biology</h3>
+            <h4>Université Grenoble Alpes | 2020 - 2022</h4>
+        </div>
+    </section>
+
+    <section>
+        <h2>SKILLS</h2>
+        <div class="skills-container">
+            <!-- Colonne 1 : Programming -->
+            <div class="skill-column">
+                <h3 style="margin-bottom: 0px;">Programming</h3>
+                <ul>
+                    <li>Languages: Bash, R, python</li>
+                    <li>Workflow: Snakemake</li>
+                    <li>Cluster: Unix/Linux (SLURM)</li>
+                </ul>
+            </div>
+    
+            <!-- Colonne 2 : Workflow & Office -->
+            <div class="skill-column">
+                <h3 style="margin-bottom: 0px;">Data Analysis</h3>
+                <ul>
+                    <li>Sequencing data: ChIP/DAP-seq</li>
+                    <li>Pipelines maintenance and improvments</li>
+                    <li>AI: use of ML and DL (CNN) tools</li>
+                </ul>
+            </div>
+    
+            <!-- Colonne 3 : Lab Techniques & Soft Skills -->
+            <div class="skill-column">
+                <h3 style="margin-bottom: 0px;">Research</h3>
+                <ul>
+                    <li>Results presentation to inter-disciplinary audience</li>
+                    <li>Weekly laboratory seminar (speaker/chairwomen)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>LANGUAGES</h2>
+        <p><b>French:</b> native</p>
+        <p><b>English:</b> scientific (B2/C1)</p>
+    </section>
+
+    <section>
+        <h2>TEACHING</h2>
+        <h3>Teacher assistant | Oct - Dec 2025</h3>
+        <h4>Université Grenoble Alpes (France), Biochemistry department </h4>
+        <p>Assuming 24 hours of practical works for 3rd year bachelor biology students in bioinformatics. Teaching bioinformatics basis and several sequences alignment principles.</p>
+    </section>
+
+
+    <section>
+        <h2>CONFERENCES</h2>
+        <div class="education-item">
+            <h3>Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM) | 8th - 11th Jul 2026</h3>
+            <h4>Bordeaux (France), organized by the Société Française de Bio-Informatique (SFBI)</h4>
+            <p>Poster presentation (<a href="https://github.com/alicejegou/JOBIM_2025_poster/blob/main/poster_JOBIM2025_git.pdf" target="_blank">https://github.com/alicejegou/JOBIM_2025_poster</a>) </p>
+        </div>
+        <div class="education-item">
+            <h3>Annual Plant-INT Symposium (APIS) | Sep from 2021 to 2025</h3>
+            <h4>Col du Lautaret (France), annually organized by the PLANT-International master students</h4>
+            <p>Involvement in organization and programm, short talk and poster presentation</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>PUBLICATIONS</h2>
+        <div class="education-item">
+            <h3>Jan 2026 | JASPAR 2026: Expansion of Transcription Factor Binding Profiles and Integration of Deep Learning Models</h3>
+            <h4>Nucleic Acids Research 54, no. D1 (2026): D184–93. </h4>
+            <p>Ovek Baydar, Damla, Ieva Rauluseviciute, Dina R. Aronsen, <i>et al. </i> <a href="https://doi.org/10.1093/nar/gkaf1209" target="_blank"> https://doi.org/10.1093/nar/gkaf1209.</a></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>HOBBIES</h2>
+        <p><b>Artistic practice:</b> drawing, watercolor, sewing </p>
+        <p><b>Athletic pursuits:</b> climbing, hiking</p>
+    </section>
 </body>
+</html>
