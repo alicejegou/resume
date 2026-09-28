@@ -1,225 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice JEGOU_Resume_2026</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Calibri';
-            line-height: 1.6;
-            color: #333;
-            max-width: 50rem;
-            margin: 0 auto;
-            padding: 0.5rem;
-        }
-        header {
-            text-align: center;
-            background-color: #134F5C;
-            color: aliceblue;
-            padding: 0.2rem;
-            font-size: 0.9rem;
-        }
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300; 
-            font-size: 1.2rem;
-            margin: 0rem;
-        }
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.8rem;
-            color: #134F5C;
-            border-bottom: 2px solid #eee;
-            margin-bottom: 0.2rem;
-        }
-        h3 {
-            font-family: 'Calibri';
-            font-size: 0.7rem;
-            margin: 0rem;
-        }
-        h4 {
-            font-family: 'Calibri';
-            color: #7f8c8d;
-            font-size: 0.7rem;
-            margin: 0rem;
-        }
-
-        p {
-            margin: 0rem;
-            font-size: 0.7rem;
-            text-align: justify;
-        } 
-
-        a {
-            color: #0A9BAA; 
-            text-decoration: none; 
-        }
-
-        a:hover {
-            color: #0A9BAA; 
-            text-decoration: underline;
-        }
-
-        a:visited {
-            color: #0A9BAA; 
-        }
-        .experience-item, .education-item {
-            margin-bottom: 0.3rem;
-        }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap; 
-            gap: 1.8rem; 
-            justify-content: space-between; 
-        }
-
-        .skill-column {
-            flex: 1; 
-            min-width: 12rem; 
-            max-width: 33%; 
-            box-sizing: border-box; 
-        }
-
-        .skill-column h3 {
-            font-family: 'Calibri';
-            font-size: 0.7rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .skill-column ul {
-            margin: 0;
-            padding-left: 0.8rem;
-        }
-
-        .skill-column li {
-            font-size: 0.7rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alice_JEGOU_Resume_2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --dark: #134F5C; --accent: #0A9BAA; --pale: #BFEFF3; --grey: #6b7b80; }
+  @page { size: A4; margin: 7mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    text-align: justify;
+    line-height: 1.35;
+    color: #2b2b2b;
+    max-width: 50rem;
+    margin: 0 auto;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  header { background: var(--dark); color: aliceblue; padding: 0.9rem 1.1rem; }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .role { font-size: 1.2rem; color: var(--pale); margin: 0.2rem 0 0.5rem; }
+  .pitch { font-size: 0.95rem; margin: 0 0 0.5rem; text-align: justify; }
+  .contact { font-size: 0.95rem; margin: 0; }
+  header a { color: var(--pale); }
+  main { padding: 0.3rem 0.6rem; }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    border-bottom: 2px solid var(--accent);
+    margin: 0.5rem 0 0.25rem;
+    padding-bottom: 0.1rem;
+  }
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  .date { font-weight: 400; color: var(--grey); white-space: nowrap; }
+  h4 { font-size: 0.72rem; font-weight: 400; color: var(--grey); margin: 0; }
+  p { font-size: 0.72rem; margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .item { margin-bottom: 0.3rem; }
+  .row { display: grid; gap: 0 1.4rem; }
+  .cols-a { grid-template-columns: 1.7fr 1fr; }
+  .cols-b { grid-template-columns: 1.2fr 1fr; }
+  .cols-c { grid-template-columns: 1.4fr 1fr; }
+  .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 1.4rem; }
+  .skills h3 { border-bottom: 1px solid #ddd; margin-bottom: 0.1rem; }
+  ul { margin: 0; padding-left: 0.9rem; }
+  li { font-size: 0.72rem; }
+  @media (max-width: 40rem) {
+    .row, .skills { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 
 <body>
-    <header>
-        <h1>Alice JEGOU, PhD Student in Bioinformatics</h1>
-    </header>
+<header>
+  <h1>Alice JEGOU</h1>
+  <div class="role">PhD candidate in Bioinformatics</div>
+  <p class="pitch">
+    From a biology background, I specialized in bioinformatics and data
+    analysis. I have extensive experience in genomics, from processing
+    experimentally acquired data to meaningful data representation
+    and interpretation, within a multidisciplinary team combining genetics,
+    biochemistry and bioinformatics.
+  </p>
+  <p class="contact">
+    alice.jegou@cea.fr &nbsp;|&nbsp; CEA Grenoble (France) &nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/alice-jegou-9a885a200/"
+       target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+    <a href="https://github.com/alicejegou" target="_blank">GitHub</a>
+  </p>
+</header>
 
+<main>
+  <div class="row cols-a">
     <section>
-        <h2>CONTACT</h2>
-        <p>alice.jegou@cea.fr - CEA Grenoble (France) - <a href="https://www.linkedin.com/in/alice-jegou-9a885a200/" target="_blank">  Linkedin </a> - <a href="https://github.com/alicejegou" target="_blank"> GitHub </a> </p>
+      <h2>Experience</h2>
+      <div class="item">
+        <h3>PhD in Bioinformatics <span class="date">Oct 2024 - present</span></h3>
+        <h4>CEA Grenoble (LPCV, Flo_Re team)</h4>
+        <p>
+          Led a large-scale study of how transcription factors (TFs) bind DNA
+          in <i>A. thaliana</i>. Analyzed 425 TF binding experiments
+          (681 samples) with a standardized ChIP/DAP-seq pipeline and studied
+          the spatial arrangement of binding sites to identify recurring
+          patterns. Currently integrating multi-omics data to predict TF
+          complexes.
+          <a href="https://doi.org/10.64898/2026.09.23.753179"
+             target="_blank">Preprint</a> |
+          <a href="https://github.com/Bioinfo-LPCV-RDF/TF_genomic_analysis_v2"
+             target="_blank">Code</a>
+        </p>
+      </div>
+      <div class="item">
+        <h3>Bioinformatics Master Thesis <span class="date">Jan - Jul 2024</span></h3>
+        <h4>CEA Grenoble (LPCV, Flo_Re team)</h4>
+        <p>
+            Built an atlas of the DNA-binding properties of <i>A. thaliana</i>
+            transcription factors through ChIP/DAP-seq data analysis.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Master's Internship <span class="date">Oct 2023 - Jan 2024</span></h3>
+        <h4>Molecular biology and epigenetics, RDP, ENS de Lyon (EpiCDev)</h4>
+        <p>
+            Analyzed natural variation in the requirement of active DNA
+            demethylation for male fertility (RNA extraction and Chop-PCR
+            experiments).
+          </p>
+      </div>
     </section>
 
     <section>
-        <h2>EXPERIENCES</h2>
-        <div class="experience-item">
-            <h3>PhD in Bioinformatics | Oct 2024 – Present</h3>
-            <h4>CEA Grenoble (LPCV - Flo_Re team)</h4>
-            <p>Study of DNA-binding properties of transcription factors in <i>A. thaliana</i>, both individually and in combination. With a standardized ChIP/DAP-seq data pipeline analysis, hundreds of trasncription factors (TF) binding experiment were analysed. The TF binding sites spatial arrangement is a key parameter in my studies, looking for preferencial grammar patterns. Crossing with multi-omics data, I aim to predict potential TFs complexes.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Bioinformatics Master Thesis | Jan 2024 – Jul 2024</h3>
-            <h4>CEA Grenoble (LPCV - Team FLO_RE) | Jan 2024 - Jul 2024</h4>
-            <p> Building an atlas of <i>A. thaliana</i> transcription factors DNA-binding properties (ChIP/DAP-seq data analysis)</p>
-        </div>
-        <div class="experience-item">
-            <h3>Master’s Internship: Molecular Biology & Epigenetics | Oct 2023 – Jan 2024</h3>
-            <h4>RDP, ENS de Lyon (EpiCDev team)</h4>
-            <p> Analyzing natural variation in the requirement of active DNA demethylation for male fertility (RNA extractions and Chop-PCR experiments)</p>
-        </div>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>PhD in Bioinformatics <span class="date">2024 - now</span></h3>
+        <h4>Université Grenoble Alpes</h4>
+      </div>
+      <div class="item">
+        <h3>Dual MSc in Plant Biology <span class="date">2022 - 2024</span></h3>
+        <h4>PLANT-International: UGA (France) and UNIMI (Italy)</h4>
+      </div>
+      <div class="item">
+        <h3>Bachelor in Biology <span class="date">2020 - 2022</span></h3>
+        <h4>Université Grenoble Alpes</h4>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Programming</h3>
+        <ul>
+          <li>Languages: Bash, R, Python</li>
+          <li>Workflow: Snakemake</li>
+          <li>HPC: Unix/Linux, Slurm</li>
+          <li>Git/GitHub versioning</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Data analysis</h3>
+        <ul>
+          <li>Sequencing data: ChIP-seq, DAP-seq, RNA-seq</li>
+          <li>Statistics and machine learning</li>
+          <li>Pipeline maintenance and improvement</li>
+          <li>Data visualization</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft skills</h3>
+        <ul>
+          <li>Multidisciplinary communication and familiar with wet-lab workflows</li>
+          <li>Autonomy and problem solving</li>
+          <li>Scientific writing and presentation</li>
+          <li>Project management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="row cols-b">
+    <section>
+      <h2>Publications</h2>
+      <div class="item">
+        <h3>A comprehensive Arabidopsis transcription factor binding atlas
+          reveals pervasive positional and syntactic organization of their
+          DNA binding</h3>
+        <h4>Pre-print, Sept 2026. <b>Jegou</b> et al.
+          <a href="https://doi.org/10.64898/2026.09.23.753179"
+             target="_blank">DOI</a></h4>
+      </div>
+      <div class="item">
+        <h3>Structural evolution of LEAFY reveals DNA-mediated cooperativity
+          and dimerization shifts at the water-to-land transition</h3>
+        <h4>Molecular Plant, Sept 2026. Verhage et al.
+          <a href="https://doi.org/10.1016/j.molp.2026.09.009"
+             target="_blank">DOI</a></h4>
+      </div>
+      <div class="item">
+        <h3>JASPAR 2026: expansion of transcription factor binding profiles
+          and integration of deep learning models</h3>
+        <h4>Nucleic Acids Research, Jan 2026. Ovek Baydar et al.
+          <a href="https://doi.org/10.1093/nar/gkaf1209"
+             target="_blank">DOI</a></h4>
+      </div>
     </section>
 
     <section>
-        <h2>EDUCATION</h2>
-        <div class="education-item">
-            <h3>PhD in Bioinformatics</h3>
-            <h4>Université Grenoble Alpes (France) | 2024 - now</h4>
-        </div>
-        <div class="education-item">
-            <h3>Dual MSc in Plant Biology (PLANT-International)</h3>
-            <h4>Université Grenoble Alpes (France) - Università degli Studi di Milano (Italy) | 2022 - 2024</h4>
-        </div>
-        <div class="education-item">
-            <h3>Bachelor in Biology</h3>
-            <h4>Université Grenoble Alpes | 2020 - 2022</h4>
-        </div>
+      <h2>Conferences</h2>
+      <div class="item">
+        <h3>ECCB, European Conference on Computational Biology
+          <span class="date">31 Aug - 4 Sep 2026</span></h3>
+        <h4>Geneva (Switzerland), with the Swiss Institute of
+          Bioinformatics</h4>
+        <p>
+          <a href="https://github.com/alicejegou/ECCB_2026_poster/blob/main/ECCB2026_Alice_JEGOU_poster.pdf"
+             target="_blank">Poster</a> and 15-minute talk at the workshop
+          "Protein-DNA interactions: from accurate binding site models to
+          gene regulatory function prediction"
+        </p>
+      </div>
+      <div class="item">
+        <h3>JOBIM <span class="date">8 - 11 Jul 2025</span></h3>
+        <h4>Bordeaux (France), organized by the SFBI</h4>
+        <p>
+          <a href="https://github.com/alicejegou/JOBIM_2025_poster/blob/main/poster_JOBIM2025_git.pdf"
+             target="_blank">Poster presentation</a>
+        </p>
+      </div>
+      <div class="item">
+        <h3>Annual Plant-INT Symposium (APIS)
+          <span class="date">Sept 2021 - 2026</span></h3>
+        <h4>Col du Lautaret (France)</h4>
+        <p>
+          Involved in organizing the event and shaping its program; short
+          talk and poster presentation
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div class="row cols-c">
+    <section>
+      <h2>Teaching and supervision</h2>
+      <div class="item">
+        <h3>Teaching assistant <span class="date">Oct - Dec 2025</span></h3>
+        <h4>Université Grenoble Alpes, Biochemistry department</h4>
+        <p>
+          Delivered 20 hours of practical sessions in bioinformatics to
+          third-year bachelor students: bioinformatics basics and principles
+          of sequence alignment.
+        </p>
+      </div>
+      <p>Co-supervised a first-year Master's intern.</p>
     </section>
 
     <section>
-        <h2>SKILLS</h2>
-        <div class="skills-container">
-            <!-- Colonne 1 : Programming -->
-            <div class="skill-column">
-                <h3 style="margin-bottom: 0px;">Programming</h3>
-                <ul>
-                    <li>Languages: Bash, R, python</li>
-                    <li>Workflow: Snakemake</li>
-                    <li>Cluster: Unix/Linux (SLURM)</li>
-                </ul>
-            </div>
-    
-            <!-- Colonne 2 : Workflow & Office -->
-            <div class="skill-column">
-                <h3 style="margin-bottom: 0px;">Data Analysis</h3>
-                <ul>
-                    <li>Sequencing data: ChIP/DAP-seq</li>
-                    <li>Pipelines maintenance and improvments</li>
-                    <li>AI: use of ML and DL (CNN) tools</li>
-                </ul>
-            </div>
-    
-            <!-- Colonne 3 : Lab Techniques & Soft Skills -->
-            <div class="skill-column">
-                <h3 style="margin-bottom: 0px;">Research</h3>
-                <ul>
-                    <li>Results presentation to inter-disciplinary audience</li>
-                    <li>Weekly laboratory seminar (speaker/chairwomen)</li>
-                </ul>
-            </div>
-        </div>
+      <h2>Languages and interests</h2>
+      <p><b>French:</b> native &nbsp; <b>English:</b> C1</p>
+      <p>Sewing, mountain sports</p>
     </section>
-
-    <section>
-        <h2>LANGUAGES</h2>
-        <p><b>French:</b> native</p>
-        <p><b>English:</b> scientific (B2/C1)</p>
-    </section>
-
-    <section>
-        <h2>TEACHING</h2>
-        <h3>Teacher assistant | Oct - Dec 2025</h3>
-        <h4>Université Grenoble Alpes (France), Biochemistry department </h4>
-        <p>Assuming 24 hours of practical works for 3rd year bachelor biology students in bioinformatics. Teaching bioinformatics basis and several sequences alignment principles.</p>
-    </section>
-
-
-    <section>
-        <h2>CONFERENCES</h2>
-        <div class="education-item">
-            <h3>Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM) | 8th - 11th Jul 2026</h3>
-            <h4>Bordeaux (France), organized by the Société Française de Bio-Informatique (SFBI)</h4>
-            <p>Poster presentation (<a href="https://github.com/alicejegou/JOBIM_2025_poster/blob/main/poster_JOBIM2025_git.pdf" target="_blank">https://github.com/alicejegou/JOBIM_2025_poster</a>) </p>
-        </div>
-        <div class="education-item">
-            <h3>Annual Plant-INT Symposium (APIS) | Sep from 2021 to 2025</h3>
-            <h4>Col du Lautaret (France), annually organized by the PLANT-International master students</h4>
-            <p>Involvement in organization and programm, short talk and poster presentation</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>PUBLICATIONS</h2>
-        <div class="education-item">
-            <h3>Jan 2026 | JASPAR 2026: Expansion of Transcription Factor Binding Profiles and Integration of Deep Learning Models</h3>
-            <h4>Nucleic Acids Research 54, no. D1 (2026): D184–93. </h4>
-            <p>Ovek Baydar, Damla, Ieva Rauluseviciute, Dina R. Aronsen, <i>et al. </i> <a href="https://doi.org/10.1093/nar/gkaf1209" target="_blank"> https://doi.org/10.1093/nar/gkaf1209.</a></p>
-        </div>
-    </section>
-
-    <section>
-        <h2>HOBBIES</h2>
-        <p><b>Artistic practice:</b> drawing, watercolor, sewing </p>
-        <p><b>Athletic pursuits:</b> climbing, hiking</p>
-    </section>
+  </div>
+</main>
 </body>
 </html>
