@@ -1,2 +1,5 @@
 # This page is my resume
-# https://alicejegou.github.io/resume/
+## English
+https://alicejegou.github.io/en/resume/
+## Français 
+https://alicejegou.github.io/fr/resume/

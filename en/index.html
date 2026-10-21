@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alice_JEGOU_Resume_2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet">
 <style>
   :root { --dark: #134F5C; --accent: #0A9BAA; --pale: #BFEFF3; --grey: #6b7b80; }
   @page { size: A4; margin: 7mm; }
@@ -21,15 +22,15 @@
   }
   header { background: var(--dark); color: aliceblue; padding: 0.9rem 1.1rem; }
   h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.1rem;
+    font-family: 'Space Grotesk', 'Montserrat', sans-serif;
+    font-size: 2.7rem;
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
   }
   .role { font-size: 1.2rem; color: var(--pale); margin: 0.2rem 0 0.5rem; }
   .pitch { font-size: 0.95rem; margin: 0 0 0.5rem; text-align: justify; }
-  .contact { font-size: 0.95rem; margin: 0; }
+  .contact { font-size: 0.95rem; margin: 0; text-align: left; }
   header a { color: var(--pale); }
   main { padding: 0.3rem 0.6rem; }
   h2 {
@@ -38,7 +39,7 @@
     font-weight: 600;
     color: var(--dark);
     border-bottom: 2px solid var(--accent);
-    margin: 0.5rem 0 0.25rem;
+    margin: 0.8rem 0 0.25rem;
     padding-bottom: 0.1rem;
   }
   h3 {
@@ -51,13 +52,12 @@
   .date { font-weight: 400; color: var(--grey); white-space: nowrap; }
   h4 { font-size: 0.72rem; font-weight: 400; color: var(--grey); margin: 0; }
   p { font-size: 0.72rem; margin: 0; }
-  a { color: var(--accent); text-decoration: none; }
+  a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
   a:hover { text-decoration: underline; }
   .item { margin-bottom: 0.3rem; }
   .row { display: grid; gap: 0 1.4rem; }
   .cols-a { grid-template-columns: 1.7fr 1fr; }
   .cols-b { grid-template-columns: 1.2fr 1fr; }
-  .cols-c { grid-template-columns: 1.4fr 1fr; }
   .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 1.4rem; }
   .skills h3 { border-bottom: 1px solid #ddd; margin-bottom: 0.1rem; }
   ul { margin: 0; padding-left: 0.9rem; }
@@ -81,9 +81,9 @@
   </p>
   <p class="contact">
     alice.jegou@cea.fr &nbsp;|&nbsp; CEA Grenoble (France) &nbsp;|&nbsp;
-    <a href="https://www.linkedin.com/in/alice-jegou-9a885a200/"
-       target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-    <a href="https://github.com/alicejegou" target="_blank">GitHub</a>
+    GitHub:
+    <a href="https://github.com/alicejegou"
+       target="_blank">github.com/alicejegou</a>
   </p>
 </header>
 
@@ -101,10 +101,12 @@
           the spatial arrangement of binding sites to identify recurring
           patterns. Currently integrating multi-omics data to predict TF
           complexes.
-          <a href="https://doi.org/10.64898/2026.09.23.753179"
-             target="_blank">Preprint</a> |
+        </p>
+        <p>
+          <b>Code:</b>
           <a href="https://github.com/Bioinfo-LPCV-RDF/TF_genomic_analysis_v2"
-             target="_blank">Code</a>
+             target="_blank"
+             >github.com/Bioinfo-LPCV-RDF/TF_genomic_analysis_v2</a>
         </p>
       </div>
       <div class="item">
@@ -117,7 +119,7 @@
       </div>
       <div class="item">
         <h3>Master's Internship <span class="date">Oct 2023 - Jan 2024</span></h3>
-        <h4>Molecular biology and epigenetics, RDP, ENS de Lyon (EpiCDev)</h4>
+        <h4>RDP, ENS de Lyon (EpiCDev team)</h4>
         <p>
             Analyzed natural variation in the requirement of active DNA
             demethylation for male fertility (RNA extraction and Chop-PCR
@@ -140,6 +142,22 @@
         <h3>Bachelor in Biology <span class="date">2020 - 2022</span></h3>
         <h4>Université Grenoble Alpes</h4>
       </div>
+
+      <h2>Teaching and supervision</h2>
+      <div class="item">
+        <h3>Part-time lecturer <span class="date">Oct - Dec 2025</span></h3>
+        <h4>Université Grenoble Alpes, Chemistry-Biology department</h4>
+        <p>
+          Delivered 20 hours of practical sessions in bioinformatics to
+          third-year bachelor students.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Co-supervision of Master's interns</h3>
+      </div>
+
+      <h2>Languages</h2>
+      <p><b>French:</b> native &nbsp; <b>English:</b> C1</p>
     </section>
   </div>
 
@@ -183,23 +201,23 @@
         <h3>A comprehensive Arabidopsis transcription factor binding atlas
           reveals pervasive positional and syntactic organization of their
           DNA binding</h3>
-        <h4>Pre-print, Sept 2026. <b>Jegou</b> et al.
+        <h4>Pre-print, Sept 2026. <b>Jegou</b> et al.<br>
           <a href="https://doi.org/10.64898/2026.09.23.753179"
-             target="_blank">DOI</a></h4>
+             target="_blank">https://doi.org/10.64898/2026.09.23.753179</a></h4>
       </div>
       <div class="item">
         <h3>Structural evolution of LEAFY reveals DNA-mediated cooperativity
           and dimerization shifts at the water-to-land transition</h3>
-        <h4>Molecular Plant, Sept 2026. Verhage et al.
+        <h4>Molecular Plant, Sept 2026. Verhage et al.<br>
           <a href="https://doi.org/10.1016/j.molp.2026.09.009"
-             target="_blank">DOI</a></h4>
+             target="_blank">https://doi.org/10.1016/j.molp.2026.09.009</a></h4>
       </div>
       <div class="item">
         <h3>JASPAR 2026: expansion of transcription factor binding profiles
           and integration of deep learning models</h3>
-        <h4>Nucleic Acids Research, Jan 2026. Ovek Baydar et al.
+        <h4>Nucleic Acids Research, Jan 2026. Ovek Baydar et al.<br>
           <a href="https://doi.org/10.1093/nar/gkaf1209"
-             target="_blank">DOI</a></h4>
+             target="_blank">https://doi.org/10.1093/nar/gkaf1209</a></h4>
       </div>
     </section>
 
@@ -211,18 +229,22 @@
         <h4>Geneva (Switzerland), with the Swiss Institute of
           Bioinformatics</h4>
         <p>
+          Poster and 15-minute talk at the workshop "Protein-DNA
+          interactions: from accurate binding site models to gene regulatory
+          function prediction"<br>
+          <b>Poster:</b>
           <a href="https://github.com/alicejegou/ECCB_2026_poster/blob/main/ECCB2026_Alice_JEGOU_poster.pdf"
-             target="_blank">Poster</a> and 15-minute talk at the workshop
-          "Protein-DNA interactions: from accurate binding site models to
-          gene regulatory function prediction"
+             target="_blank">github.com/alicejegou/ECCB_2026_poster</a>
         </p>
       </div>
       <div class="item">
         <h3>JOBIM <span class="date">8 - 11 Jul 2025</span></h3>
         <h4>Bordeaux (France), organized by the SFBI</h4>
         <p>
+          Poster presentation<br>
+          <b>Poster:</b>
           <a href="https://github.com/alicejegou/JOBIM_2025_poster/blob/main/poster_JOBIM2025_git.pdf"
-             target="_blank">Poster presentation</a>
+             target="_blank">github.com/alicejegou/JOBIM_2025_poster</a>
         </p>
       </div>
       <div class="item">
@@ -234,28 +256,6 @@
           talk and poster presentation
         </p>
       </div>
-    </section>
-  </div>
-
-  <div class="row cols-c">
-    <section>
-      <h2>Teaching and supervision</h2>
-      <div class="item">
-        <h3>Teaching assistant <span class="date">Oct - Dec 2025</span></h3>
-        <h4>Université Grenoble Alpes, Biochemistry department</h4>
-        <p>
-          Delivered 20 hours of practical sessions in bioinformatics to
-          third-year bachelor students: bioinformatics basics and principles
-          of sequence alignment.
-        </p>
-      </div>
-      <p>Co-supervised a first-year Master's intern.</p>
-    </section>
-
-    <section>
-      <h2>Languages and interests</h2>
-      <p><b>French:</b> native &nbsp; <b>English:</b> C1</p>
-      <p>Sewing, mountain sports</p>
     </section>
   </div>
 </main>
